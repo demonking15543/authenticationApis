@@ -3,16 +3,29 @@
 ```How to use this apis```
 
 
-Markup : <details>
+Markup1 : <details>
            <summary>How to use this apis </summary>
   <p>Clone the repo</p>
     <p>Inside the directory run npm install</p>
       <p>create .env file and pass following parameters: -</p>
   <p> JWT_SECRET=anyRandomValue</p>
     <p> DATABASE_URL=your database server url</p>
+        <p>After pasting both args, move to next step</p>
+         <p>On current terminal nun ```npx prisma db push --preview-feature```
+         
+ to pushes the state of your Prisma schema file to the database without using migrations.
+</p>
+         <p>After the successfull migration, run npm start</P>
+         
+         
+         
 
-      
-  
+</details>
+    
+
+
+
+
   
 
 
