@@ -32,5 +32,35 @@ Markup1 : <details>
 </ditail>
 
 
+## This App contains following routes:
 
+     /users/signup
+     Required fields : [name, email, password]
+     Successfull response : {id, email, name}
+     
+     
+      /users/signin
+     Required fields : [email, password]
+     Successfull response : {id, token}
+     
+       /users/my-profile
+     Required field : [userId]
+     Required headers : [ Bearer token]
+     Successfull response : {id, email, name}
+     
+       /users/edit
+     Required fields : [userId, name]
+     Required headers : [ Bearer token]
+     Successfull response : {id, email, name}
+     
+       /users/delete
+     Required field : [userId]
+     Required headers : [ Bearer token]
+     Successfull response : successMessage
 
+     
+
+     
+     
+     
+     
