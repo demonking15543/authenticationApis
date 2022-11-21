@@ -60,7 +60,7 @@ const signin = async (req, res) => {
         const validPassword = await bcrypt.compare(body.password, user.password);
         if (validPassword) {
             const jwt_secret= await JWTToken(user);
-            res.status(201).json({"id": user.id, "token": jwt_secret});
+            res.status(200).json({"id": user.id, "token": jwt_secret});
           } else {
             res.status(400).json({ error: "Invalid Password" });
           }
